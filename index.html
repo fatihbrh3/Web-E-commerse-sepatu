@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutumShoes</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;1,600&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="navbar-logo">Autum<Span>Shoes</Span>.</span></a>
+
+        <div class="navbar-nav">
+            <a href="#About">About Us</a>
+            <a href="#Product">Product</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+        <div class="navbar-extra">
+            <a href="#" id="search-button"><i data-feather="search"></i></a>
+            <a href="#Contact" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+            <a id="codesandbox"><i data-feather="codesandbox"></i></a>
+        </div>
+
+        <!-- Search -->
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box"><i data-feather="search"></i></label>
+        </div>
+
+    </nav>
+
+    <!-- Section Hero-->
+    <section class="hero" id="home">
+        <main class="content">
+            <div id="JAM"></div>
+            <h1>Langkah Nyaman Menuju <span>Gaya</span>.</h1>
+            <p>Semangat kami adalah memberikan langkah nyaman menuju gaya melalui sepatu berkualitas tinggi.</p>
+            <a href="#Contact" class="cta">Pesan Sekarang</a>
+        </main>
+    </section>
+
+    <!-- Section About -->
+    <section class="About" id="About">
+        <h2>Tentang <Span>Kami</Span></h2>
+
+        <div class="row">
+            <div class="About-img">
+                <img src="./img/tentang-kami.jpg" alt="Tentang Kami">
+            </div>
+            <div class="content">
+                <h3>Kenapa memilih produk kami?</h3>
+                <p>Kami adalah pilihan utama karena kami menghadirkan sepatu berkualitas tinggi dengan desain yang
+                    modern. Produk kami tidak hanya mengutamakan gaya, tetapi juga kenyamanan yang luar biasa. Dibuat
+                    dengan material terbaik, sepatu kami tahan lama dan siap untuk mendukung setiap langkah Anda.</p>
+                <p>Kami berkomitmen untuk memberikan pengalaman berbelanja yang memuaskan dengan pilihan produk terbaru,
+                    pelayanan pelanggan yang istimewa, dan harga yang terjangkau. Bergabunglah dengan kami dan rasakan
+                    kualitas sejati dalam setiap sepatu yang Anda kenakan.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Product -->
+    <section id="Product" class="Product">
+        <h2>Produk <Span>Kami</Span></h2>
+        <p>Jelajahi koleksi sepatu terbaik kami dengan gaya terbaru.</p>
+
+        <!-- Button Filter -->
+        <div id="buttons-filter">
+            <button class="filter-button" onclick="filterProduct('All')">All</button>
+            <button class="filter-button" onclick="filterProduct('Type 1')">Type 1</button>
+            <button class="filter-button" onclick="filterProduct('Type 2')">Type 2</button>
+            <button class="filter-button" onclick="filterProduct('Type 3')">Type 3</button>
+        </div>
+        <div class="row">
+            <div class="Product-card" data-category="Type 1">
+                <img src="./img/Sample1.jpg" alt="Etalase1" class="Product-card-img">
+                <h3 class="Product-card-tittle">AutumShoes 1</h3>
+                <p class="Product-card-price">IDR 570K</p>
+            </div>
+            <div class="Product-card" data-category="Type 1">
+                <img src="./img/Sample2.jpg" alt="Etalase1" class="Product-card-img">
+                <h3 class="Product-card-tittle">AutumShoes 2</h3>
+                <p class="Product-card-price">IDR 550K</p>
+            </div>
+            <div class="Product-card" data-category="Type 2">
+                <img src="./img/Sample3.jpg" alt="Etalase1" class="Product-card-img">
+                <h3 class="Product-card-tittle">AutumShoes 3</h3>
+                <p class="Product-card-price">IDR 600K</p>
+            </div>
+            <div class="Product-card" data-category="Type 2">
+                <img src="./img/Sample4.jpg" alt="Etalase1" class="Product-card-img">
+                <h3 class="Product-card-tittle">AutumShoes 4</h3>
+                <p class="Product-card-price">IDR 1.070K</p>
+            </div>
+            <div class="Product-card" data-category="Type 3">
+                <img src="./img/Sample5.jpg" alt="Etalase1" class="Product-card-img">
+                <h3 class="Product-card-tittle">AutumShoes 5</h3>
+                <p class="Product-card-price">IDR 800K</p>
+            </div>
+            <div class="Product-card" data-category="Type 3">
+                <img src="./img/Sample6.jpg" alt="Etalase1" class="Product-card-img">
+                <h3 class="Product-card-tittle">AutumShoes 6</h3>
+                <p class="Product-card-price">IDR 2.350K</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="Contact" class="Contact">
+        <h2>Kontak <Span>Kami</Span></h2>
+        <p>Kontak kami sekarang untuk bantuan dan Pemesanan produk kami.</p>
+
+        <div class="row">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63245.98371952899!2d110.33364479802546!3d-7.803163418573819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5787bd5b6bc5%3A0x21723fd4d3684f71!2sYogyakarta%2C%20Kota%20Yogyakarta%2C%20Daerah%20Istimewa%20Yogyakarta!5e0!3m2!1sid!2sid!4v1704611166156!5m2!1sid!2sid"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map">
+            </iframe>
+            <form action="">
+                <div class="input-group">
+                    <i data-feather="user"></i>
+                    <input type="text" placeholder="Nama">
+                </div>
+                <div class="input-group">
+                    <i data-feather="mail"></i>
+                    <input type="text" placeholder="email">
+                </div>
+                <div class="input-group">
+                    <i data-feather="phone"></i>
+                    <input type="text" placeholder="Nomor Hp">
+                </div>
+                <div class="input-group">
+                    <i data-feather="shopping-bag"></i>
+                    <input type="text" placeholder="Nama Produk">
+                </div>
+                <button type="submit" class="btn">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social">
+            <a href="#"><i data-feather="instagram"></i></a>
+            <a href="#"><i data-feather="twitter"></i></a>
+            <a href="#"><i data-feather="facebook"></i></a>
+        </div>
+
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="#About">About Us</a>
+            <a href="#Product">Product</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+        <div class="credit">
+            <p>Created by <a href="">Fatih 'Alauddin Akbar</a> | &copy; 2024.</p>
+        </div>
+    </footer>
+
+    <!-- Icon -->
+    <script>
+        feather.replace()
+    </script>
+
+    <!-- Js Aing-->
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
